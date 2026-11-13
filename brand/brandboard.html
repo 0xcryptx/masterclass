@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ultimate Masterclass Brand Board</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap">
+<style>
+:root{
+  --gold:#C9A46A; --gold-light:#F2DDAE; --gold-deep:#7E5E2A;
+  --champagne:#F5EFE4; --white:#FFFFFF; --charcoal:#1C1A17; --black:#0B0B0B;
+  --metal:linear-gradient(135deg,#F4DEAF 0%,#D9BB85 28%,#B58A4C 55%,#E9CF9B 78%,#A07A3E 100%);
+}
+*{box-sizing:border-box;margin:0}
+body{width:1920px;background:var(--black);color:var(--champagne);font-family:Montserrat,Arial,sans-serif;padding:150px 75px 140px}
+h2{font-family:Cinzel,serif;font-weight:400;font-size:52px;letter-spacing:.12em;text-align:center;color:var(--gold);margin-bottom:56px}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.5;margin:110px 0}
+
+.logos{display:grid;grid-template-columns:520px 1fr;gap:60px;height:470px}
+.card{border-radius:26px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.mono{background:var(--white)}
+.mono img{width:72%}
+.full{background:var(--charcoal);border:1px solid rgba(201,164,106,.35)}
+.full img{width:78%}
+
+.pal{display:flex;justify-content:center;gap:34px;margin-bottom:34px}
+.sw{width:300px}
+.chip{height:170px;border-radius:14px;display:flex;align-items:flex-end;padding:20px 22px;font-family:Cinzel,serif;font-size:28px;letter-spacing:.08em}
+.sw p{margin-top:16px;font-size:20px;letter-spacing:.14em;text-transform:uppercase;color:var(--champagne)}
+.sw small{display:block;margin-top:6px;font-size:16px;letter-spacing:.04em;text-transform:none;color:#9b958b}
+.metal{margin:46px auto 0;width:1404px;height:90px;border-radius:14px;background:var(--metal);display:flex;align-items:center;justify-content:space-between;padding:0 30px;font-size:18px;letter-spacing:.2em;text-transform:uppercase;color:#3b2a10;font-weight:600}
+
+.fonts{background:var(--champagne);color:var(--black);border-radius:26px;padding:80px 60px 90px;display:grid;grid-template-columns:1fr 1fr;text-align:center;position:relative}
+.fonts::before{content:"";position:absolute;left:50%;top:90px;bottom:90px;width:1px;background:rgba(126,94,42,.3)}
+.fonts .lbl{grid-column:1/-1;font-size:22px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:50px;font-weight:500}
+.aa{font-size:220px;line-height:1;color:var(--black)}
+.abc{font-size:30px;margin-top:30px;letter-spacing:.04em}
+.abc + .abc{font-size:26px;margin-top:10px;color:#4a463f}
+.fname{margin-top:50px;font-size:58px}
+.use{margin-top:14px;font-size:19px;color:var(--gold-deep);letter-spacing:.08em}
+.cinzel{font-family:Cinzel,serif}
+
+.ui{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px}
+.panel{border-radius:22px;padding:50px 46px;min-height:420px}
+.panel h4{font-size:16px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;margin-bottom:34px}
+.p-dark{background:var(--charcoal);border:1px solid rgba(201,164,106,.25)}
+.p-dark h4{color:var(--gold)}
+.p-light{background:var(--white);color:var(--black)}
+.p-light h4{color:var(--gold-deep)}
+.btn{display:inline-block;border-radius:999px;padding:22px 44px;font-size:18px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin:0 14px 22px 0}
+.b-gold{background:var(--metal);color:#1a1307}
+.b-line{border:1.5px solid var(--gold);color:var(--gold)}
+.b-black{background:var(--black);color:var(--white)}
+.b-line-dark{border:1.5px solid var(--black);color:var(--black)}
+.ticket .price{font-family:Cinzel,serif;font-size:64px;color:var(--gold);margin:6px 0 4px}
+.ticket .tt{font-family:Cinzel,serif;font-size:32px;letter-spacing:.06em}
+.ticket .sub{color:#9b958b;font-size:18px;letter-spacing:.06em}
+.ticket ul{list-style:none;padding:0;margin-top:26px;font-size:19px;line-height:2;color:#d9d3c8}
+.ticket li::before{content:"";display:inline-block;width:8px;height:8px;transform:rotate(45deg);background:var(--gold);margin-right:16px;vertical-align:3px}
+.days{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.day{border:1px solid rgba(126,94,42,.35);border-radius:14px;padding:22px}
+.day b{display:block;font-family:Cinzel,serif;font-weight:500;font-size:16px;letter-spacing:.2em;color:var(--gold-deep);margin-bottom:8px}
+.day span{font-family:Cinzel,serif;font-size:24px}
+
+.voice{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:40px}
+.voice div{border-top:1px solid rgba(201,164,106,.5);padding-top:26px}
+.voice b{font-family:Cinzel,serif;font-weight:400;font-size:34px;color:var(--gold);letter-spacing:.06em}
+.voice p{margin-top:12px;font-size:19px;line-height:1.6;color:#b9b3a8}
+</style>
+</head>
+<body>
+
+<section class="logos">
+  <div class="card mono"><img src="../assets/logo/logo-small.png" alt="UM monogram"></div>
+  <div class="card full"><img src="../assets/logo/logo-full.png" alt="Ultimate Masterclass Dubai logo"></div>
+</section>
+
+<div class="rule"></div>
+
+<h2>Color Palette</h2>
+<div class="pal">
+  <div class="sw"><div class="chip" style="background:#C9A46A;color:#1a1307">Gold</div><p>#C9A46A<small>Primary. Sampled from the logo</small></p></div>
+  <div class="sw"><div class="chip" style="background:#F2DDAE;color:#1a1307">Light Gold</div><p>#F2DDAE<small>Highlights, hovers</small></p></div>
+  <div class="sw"><div class="chip" style="background:#7E5E2A;color:#F5EFE4">Antique Gold</div><p>#7E5E2A<small>Gold text on white (AA)</small></p></div>
+  <div class="sw"><div class="chip" style="background:#F5EFE4;color:#0B0B0B">Champagne</div><p>#F5EFE4<small>Accent. Soft section bands</small></p></div>
+</div>
+<div class="pal">
+  <div class="sw"><div class="chip" style="background:#0B0B0B;color:#F5EFE4;border:1px solid #333">Black</div><p>#0B0B0B<small>Primary background</small></p></div>
+  <div class="sw"><div class="chip" style="background:#1C1A17;color:#F5EFE4;border:1px solid #333">Charcoal</div><p>#1C1A17<small>Cards on black</small></p></div>
+  <div class="sw"><div class="chip" style="background:#FFFFFF;color:#0B0B0B">White</div><p>#FFFFFF<small>Light sections, text on black</small></p></div>
+</div>
+<div class="metal"><span>Metallic Gold Gradient</span><span>#F4DEAF → #D9BB85 → #B58A4C → #E9CF9B → #A07A3E</span></div>
+
+<div class="rule"></div>
+
+<section class="fonts">
+  <div class="lbl">Typography</div>
+  <div>
+    <div class="aa cinzel">Aa</div>
+    <div class="abc cinzel">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+    <div class="abc cinzel">0123456789 · £ &amp;</div>
+    <div class="fname cinzel">Cinzel</div>
+    <div class="use">Headings · Prices · Day titles</div>
+  </div>
+  <div>
+    <div class="aa" style="font-weight:500">Aa</div>
+    <div class="abc">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+    <div class="abc">abcdefghijklmnopqrstuvwxyz</div>
+    <div class="fname" style="font-weight:500">Montserrat</div>
+    <div class="use">Body · Navigation · Buttons · Labels</div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<h2>In Use</h2>
+<section class="ui">
+  <div class="panel p-dark">
+    <h4>Buttons on black</h4>
+    <span class="btn b-gold">Book Tickets</span><br>
+    <span class="btn b-line">View the 4 Days</span>
+    <span class="btn b-line" style="border-color:rgba(242,221,174,.4);color:#F2DDAE">WhatsApp Us</span>
+  </div>
+  <div class="panel p-dark ticket">
+    <h4>Ticket card</h4>
+    <div class="tt">Full Experience</div>
+    <div class="sub">Day 1 – 4 · Luxe Edition</div>
+    <div class="price">£1,650</div>
+    <ul><li>Beach club welcome</li><li>Wellness integration day</li><li>Doctor-led masterclass</li><li>Sunset yacht celebration</li></ul>
+  </div>
+  <div class="panel p-light">
+    <h4>The four days</h4>
+    <div class="days">
+      <div class="day"><b>Day 01</b><span>Welcome</span></div>
+      <div class="day"><b>Day 02</b><span>Wellness</span></div>
+      <div class="day"><b>Day 03</b><span>Masterclass</span></div>
+      <div class="day"><b>Day 04</b><span>Celebration</span></div>
+    </div>
+    <h4 style="margin-top:40px">Buttons on white</h4>
+    <span class="btn b-black">Book Tickets</span>
+    <span class="btn b-line-dark">Enquire</span>
+  </div>
+</section>
+
+<div class="voice">
+  <div><b>Exclusive</b><p>Small rooms, limited tickets, doctor-led. Write with quiet confidence.</p></div>
+  <div><b>Elevated</b><p>Black and gold, generous space, nothing loud. Gold is the accent, never the background.</p></div>
+  <div><b>Connected</b><p>Education first, then the people. Networking is part of the product.</p></div>
+</div>
+
+</body>
+</html>

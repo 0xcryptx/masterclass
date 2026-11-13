@@ -1,0 +1,65 @@
+THE ULTIMATE MASTERCLASS — BRAND BOARD REFERENCE
+==================================================
+
+BRAND NAME
+----------
+The Ultimate Masterclass (The Ultimate Aesthetics Masterclass | UK & Dubai)
+Instagram: @the_ultimatemasterclass
+Organiser / ticketing: Educational Events — stan.store/EducationalEvents
+Tagline (IG bio):  Exclusive Aesthetics Education. Elite Networking.
+Tagline (UK):      Education. Innovation. Connection.
+
+Logos: assets/logo/logo-full.png  (UM + "Ultimate Masterclass Dubai", transparent)
+       assets/logo/logo-small.png (UM monogram)
+Board: assets/tumc_brandboard.png  (source: brand/brandboard.html)
+
+
+COLOR PALETTE
+-------------
+#C9A46A — Gold (primary, sampled from the logo mid-tone)
+#F2DDAE — Light Gold (highlights, hovers, gold text on charcoal)
+#7E5E2A — Antique Gold (gold text/labels on white or champagne, passes WCAG AA)
+#F5EFE4 — Champagne (added accent: soft section bands, typography panels)
+#0B0B0B — Black (primary background)
+#1C1A17 — Charcoal (cards on black)
+#FFFFFF — White (light sections, text on black)
+
+Metallic gold gradient (buttons, rules):
+  linear-gradient(135deg, #F4DEAF 0%, #D9BB85 28%, #B58A4C 55%, #E9CF9B 78%, #A07A3E 100%)
+
+Contrast notes:
+  #C9A46A on black = 8.4:1 (fine for any text)
+  #C9A46A on white = 2.3:1 (decoration only — use #7E5E2A for text on white)
+
+
+FONTS
+-----
+Display: Cinzel (Google Fonts) — headings, prices, day titles. Echoes the
+         classical capitals in the logo.
+Body:    Montserrat (Google Fonts) — body, nav, buttons, labels.
+
+  font-family: "Cinzel", "Trajan Pro", Georgia, serif;
+  font-family: "Montserrat", Arial, sans-serif;
+
+
+DESIGN STYLE
+------------
+Mood:   Exclusive, elevated, connected. Luxury aesthetics education.
+UI:     Black backgrounds, gold as accent (never large gold fills), white/champagne
+        light sections, pill buttons, thin gold hairlines, generous spacing,
+        letter-spaced uppercase labels.
+Avoid:  Clinical blue, neon, busy gradients, gold body text on white.
+
+
+EVENT FACTS (from Instagram / Linktree / Stan, Nov 2026)
+--------------------------------------------------------
+Next editions: UK — March 2027 · Dubai — April 2027 (exact dates TBA)
+Dubai format ("Luxe Edition", last ran 5–8 Nov 2026):
+  Day 1  Welcome Experience — O Beach Dubai beach club (optional)
+  Day 2  Wellness Integration — beach sound bath, business hypnosis with Ebrahim Turner
+  Day 3  The Ultimate Masterclass — doctor-led, Marriott Hotel Dubai
+  Day 4  Collaboration & Celebration — luxury yacht, DJ, sunset networking
+Dubai prices (Nov 2026 listing): Day 1–4 £1,650 · Day 2–4 £1,500 · Masterclass only £1,000
+  · Day 3&4 £1,400 · Day 2&3 £1,100 · Day 1–2 £350 · Partners (Day 1 & 4) £600 · Beach Club £150
+Flights and accommodation not included.
+WhatsApp: +44 7821 859250
