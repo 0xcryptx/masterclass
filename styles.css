@@ -98,7 +98,8 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4.2vw,46px);lin
 
 /* Masterclass split */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.split-img{border-radius:20px;overflow:hidden;box-shadow:0 24px 60px rgba(28,26,23,.18)}
+.split-img{position:relative;border-radius:20px;overflow:hidden;box-shadow:0 24px 60px rgba(28,26,23,.18)}
+.split-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,.22),rgba(11,11,11,.4));pointer-events:none}
 .split-img img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 35%}
 .split .ticks{margin-top:32px}
 .ticks{list-style:none;display:grid;gap:0}
