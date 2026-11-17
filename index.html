@@ -279,9 +279,10 @@
 (function(){
   var d=document.getElementById('pay-off');
   document.querySelectorAll('[data-pay]').forEach(function(a){
-    a.addEventListener('click',function(e){e.preventDefault();d.showModal()});
+    a.addEventListener('click',function(e){e.preventDefault();d.showModal();document.documentElement.classList.add('no-scroll')});
   });
   d.addEventListener('click',function(e){if(e.target===d)d.close()});
+  d.addEventListener('close',function(){document.documentElement.classList.remove('no-scroll')});
 })();
 </script>
 </body>

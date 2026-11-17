@@ -167,6 +167,7 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4.2vw,46px);lin
 .close h2{margin-top:0}
 
 /* Payment notice */
+html.no-scroll,html.no-scroll body{overflow:hidden;touch-action:none}
 .modal{margin:auto;width:min(520px,calc(100% - 32px));border:1px solid var(--gold);border-radius:20px;padding:44px 36px 36px;background:var(--charcoal);color:var(--white);text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.6)}
 .modal::backdrop{background:rgba(11,11,11,.75);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
 .modal .label{color:var(--gold)}
