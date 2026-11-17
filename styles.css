@@ -94,10 +94,9 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4.2vw,46px);lin
 .day h3{font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.25}
 .day-where{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-light);margin-top:8px;padding-bottom:16px;border-bottom:1px solid var(--line-light)}
 .day p:last-child{margin-top:16px;font-size:15px;color:var(--muted-light)}
-.day-key{background:var(--gold);color:var(--black);border-color:var(--gold)}
-.day-key:hover{border-color:var(--gold-deep)}
-.day-key .day-where{color:var(--gold-deep);border-color:rgba(122,103,72,.3)}
-.day-key p:last-child{color:#4a4335}
+.day-key{background:var(--black);color:var(--white);border-color:var(--black)}
+.day-key .day-where{color:var(--gold-light);border-color:var(--line-dark)}
+.day-key p:last-child{color:var(--muted-dark)}
 
 /* Gallery: photo stack -> grid -> lightbox (ported from JANA Travel, see gallery.js) */
 .gallery{text-align:center}
