@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://theultimatemasterclass.co.uk/sitemap.xml

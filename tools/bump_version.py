@@ -10,7 +10,7 @@ import json, re, time, pathlib
 root = pathlib.Path(__file__).resolve().parent.parent
 version = time.strftime('%Y%m%d%H%M%S')
 
-asset = re.compile(r'((?:src|href|srcset)=")((?!https?:|//|#|mailto:|data:)[^"?]+\.(?:css|js|png|jpe?g|webp|svg|avif))(?:\?v=[^"]*)?(")')
+asset = re.compile(r'((?:src|href|srcset)=")((?!https?:|//|#|mailto:|data:)[^"?]+\.(?:css|js|png|jpe?g|webp|svg|avif|ico))(?:\?v=[^"]*)?(")')
 for name in ('index.html', 'terms.html', 'experience.html'):
     html_path = root / name
     if not html_path.exists():
