@@ -27,10 +27,22 @@ a{color:inherit}
 .narrow{max-width:760px}
 
 /* ---------- Scroll progress (same pattern as Rejuvenate) ----------
-   Native side scrollbar is hidden; a gold progress line under the navbar
+   Main page: native scrollbar hidden, a gold progress line under the navbar
    shows position instead (see scrollbar.js). */
 html{scrollbar-width:none;overscroll-behavior:none}
 html::-webkit-scrollbar{width:0;height:0}
+/* Experience and terms pages (html.show-sb): slim champagne scrollbar, no track */
+html.show-sb{scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+html.show-sb::-webkit-scrollbar{width:8px;height:8px;background:transparent}
+html.show-sb::-webkit-scrollbar-track{background:transparent}
+html.show-sb::-webkit-scrollbar-thumb{background:var(--gold);border-radius:999px;border:2px solid transparent;background-clip:padding-box}
+html.show-sb::-webkit-scrollbar-thumb:hover{background:#f1e6cd;background-clip:padding-box}
+html.show-sb::-webkit-scrollbar-corner{background:transparent}
+/* Touch-screen version of that scrollbar (drawn by scrollbar.js) */
+.touch-sb{position:fixed;top:0;right:0;bottom:0;width:22px;z-index:20;pointer-events:none}
+.touch-sb i{position:absolute;top:0;right:3px;width:5px;border-radius:999px;background:var(--gold);opacity:.9;pointer-events:auto;touch-action:none;box-shadow:0 0 0 1px rgba(11,11,11,.25);transition:width .2s,opacity .2s}
+.touch-sb i::before{content:"";position:absolute;top:-6px;bottom:-6px;right:-3px;width:24px}
+.touch-sb.is-dragging i{width:8px;opacity:1}
 .scroll-progress{position:absolute;top:100%;left:0;right:0;height:3px;background:rgba(232,216,181,.12);overflow:hidden;pointer-events:none}
 .scroll-progress i{display:block;height:100%;width:100%;background:linear-gradient(90deg,#CDB88F,#E8D8B5 40%,#F7F0E1 75%,#E0CDA6);transform:scaleX(0);transform-origin:left center;will-change:transform}
 
