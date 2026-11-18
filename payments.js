@@ -1,9 +1,9 @@
 /* Ticket buttons ([data-pay], real checkout URL in data-href).
    - Locked until the Terms & Conditions box (#agreeTerms) is ticked.
    - PAYMENTS_LIVE = false: show the "payments temporarily unavailable" popup.
-   - PAYMENTS_LIVE = true:  go straight to the checkout in data-href. */
+   - PAYMENTS_LIVE = true:  open the checkout in data-href in a new tab. */
 (function () {
-  var PAYMENTS_LIVE = false;
+  var PAYMENTS_LIVE = true;
 
   var d = document.getElementById('pay-off');
   var box = document.getElementById('agreeTerms');
@@ -33,7 +33,7 @@
         agree.scrollIntoView({ behavior: 'smooth', block: 'center' });
         return;
       }
-      if (PAYMENTS_LIVE && a.getAttribute('data-href')) { location.href = a.getAttribute('data-href'); return; }
+      if (PAYMENTS_LIVE && a.getAttribute('data-href')) { window.open(a.getAttribute('data-href'), '_blank', 'noopener'); return; }
       if (d) { d.showModal(); document.documentElement.classList.add('no-scroll'); }
     });
   });
