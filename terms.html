@@ -6,12 +6,12 @@
 <title>Booking Terms &amp; Conditions | The Ultimate Masterclass Dubai</title>
 <meta name="description" content="Booking terms and conditions for The Ultimate Masterclass Dubai, April 2027.">
 <meta name="theme-color" content="#0B0B0B">
-<link rel="icon" type="image/png" href="assets/logo/logo-small.png?v=20261118172802">
+<link rel="icon" type="image/png" href="assets/logo/logo-small.png?v=20261118181306">
 <script>
 /* Version check: GitHub Pages caches this page for ~10 min. If the live site has a
    newer version than the one loaded, reload once to pick it up (see tools/bump_version.py). */
 (function () {
-  var SITE_VERSION = "20261118172802";
+  var SITE_VERSION = "20261118181306";
   if (location.protocol === 'file:' || !window.fetch) return;
   fetch('version.json?t=' + Date.now(), { cache: 'no-store' })
     .then(function (r) { return r.ok ? r.json() : null; })
@@ -27,16 +27,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Montserrat:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="styles.css?v=20261118172802">
+<link rel="stylesheet" href="styles.css?v=20261118181306">
 </head>
 <body class="tc-page">
 
-<header class="nav">
-  <div class="wrap nav-in">
-    <a href="index.html" class="nav-mark" aria-label="The Ultimate Masterclass, home"><picture><source srcset="assets/logo/logo-text.webp?v=20261118172802" type="image/webp"><img src="assets/logo/logo-text.png?v=20261118172802" alt="" width="2400" height="959"></picture></a>
-    <a href="index.html#tickets" class="btn btn-line btn-sm tc-nav-back">Back to Tickets</a>
-  </div>
-</header>
+<a href="index.html#tickets" class="back-float" data-back><span aria-hidden="true">←</span><span class="back-float-t">Back to Tickets</span></a>
 
 <main class="sec light">
   <div class="wrap narrow">
@@ -94,7 +89,7 @@
         <p>These terms do not affect your statutory rights. Nothing in these terms excludes or limits liability for death or personal injury caused by negligence, fraud, or any other liability that cannot lawfully be excluded or limited.</p>
       </section>
     </div>
-    <p class="tc-back"><a href="index.html#tickets" class="btn btn-gold">Back to Tickets</a></p>
+    <p class="tc-back"><a href="index.html#tickets" class="btn btn-gold" data-back><span class="back-float-t">Back to Tickets</span></a></p>
   </div>
 </main>
 
@@ -105,6 +100,23 @@
   </div>
 </footer>
 
-<script src="scrollbar.js?v=20261118172802" defer></script>
+<script>
+/* Back buttons return the visitor to where they came from (links to this page add ?from=...),
+   restoring their scroll position via history; on a direct visit they go to the tickets section. */
+(function(){
+  var from=new URLSearchParams(location.search).get('from');
+  var map={tickets:['Back to Tickets','index.html#tickets'],experience:['Back to the Experience','experience.html'],home:['Back','index.html']};
+  var m=map[from]||map.tickets;
+  document.querySelectorAll('[data-back]').forEach(function(a){
+    a.href=m[1];
+    a.setAttribute('aria-label',m[0]);
+    var t=a.querySelector('.back-float-t');if(t)t.textContent=m[0];
+    a.addEventListener('click',function(e){
+      if(map[from]&&history.length>1){e.preventDefault();history.back();}
+    });
+  });
+})();
+</script>
+<script src="scrollbar.js?v=20261118181306" defer></script>
 </body>
 </html>
