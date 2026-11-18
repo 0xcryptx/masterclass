@@ -1,5 +1,5 @@
 #!/bin/sh
 # Stamp a fresh cache-busting version on every commit that touches the site.
 if git diff --cached --name-only | grep -qvE '^(version\.json|tools/|\.githooks/)'; then
-  python3 tools/bump_version.py >/dev/null && git add index.html version.json
+  python3 tools/bump_version.py >/dev/null && git add index.html terms.html version.json
 fi
