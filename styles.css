@@ -214,11 +214,12 @@ h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4.2vw,46px);lin
 /* Testimonials: slow marquee (see reviews.js) */
 .reviews .label,.reviews h2{text-align:center}
 .sec.reviews{padding-bottom:56px}
-.rv-hint{margin-top:14px;text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-dark);transition:color .3s}
-.reviews.is-paused .rv-hint{color:var(--gold)}
+.rv-hint{margin-top:14px;text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-light);transition:color .3s}
+.reviews.is-paused .rv-hint{color:var(--gold-deep)}
 .rv-marquee{margin-top:44px;overflow:hidden;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
 .rv-track{display:flex;align-items:flex-start;width:max-content;will-change:transform}
+.reviews .quote{box-shadow:0 14px 34px rgba(28,26,23,.14)}
 .quote{flex:0 0 auto;width:min(400px,80vw);margin:0 20px 0 0;border:1px solid var(--line-dark);border-radius:20px;padding:30px 28px 28px;background:var(--charcoal);transition:border-color .3s}
 .rv-marquee.is-dragging{cursor:grabbing}
 .reviews.is-paused .quote{border-color:rgba(232,216,181,.4)}
